@@ -1,7 +1,22 @@
-##Rscript: completeTCR.R (chiotti
+###########################################################################
+# CompleteTCR - repertoire determination from RNAseq of paired TCR chains #
+# Copyright (C) 2015  Kami E. Chiotti chiotti@ohsu.edu                    #
+#                                                                         #
+# This program is free software: you can redistribute it and/or modify    #
+# it under the terms of the GNU General Public License as published by    #
+# the Free Software Foundation, either version 3 of the License, or       #
+# (at your option) any later version.                                     #
+#                                                                         #
+# This program is distributed in the hope that it will be useful,         #
+# but WITHOUT ANY WARRANTY; without even the implied warranty of          #
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           #
+# GNU General Public License for more details.                            #
+#                                                                         #
+# You should have received a copy of the GNU General Public License       #
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.   #
+###########################################################################
+
 ##Merge the 'long' ids produced by the modified MiTCR softeware (CompleteTCR) and stored in results.txt with those in the new descToID_mapping.txt file to get the input read names; match up read ids between alpha and beta inputs; get complete clone frequencies and percent reads
-##INPUT: 
-##OUTPUT: 
 
 library(plyr)
 
