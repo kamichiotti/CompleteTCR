@@ -1,0 +1,31 @@
+CompleteTCR is a pipeline that determines the repertoire diversity of paired alpha and beta chains 
+of T cell receptor clones utilizing raw sequence data generated from single paired TCRs as input.
+
+-------------------------------------------------------
+
+
+SYSTEM REQUIREMENTS
+Java version 1.7 or higher and R version 3.1.0 or higher should be installed on the system. The plyr() 
+package must be installed to R. 
+
+CompleteTCR consists of three separate scripts: A shell wrapper (completeClone.sh), an R script 
+(completeTCR.R), and a JAR file (completeTCR.jar). All three scripts must be placed within the same 
+directory, and the path to this directory is used as an argument when executing CompleteTCR.
+
+
+USAGE
+CompleteTCR is a command line application. Full paths are required for all file and tool locations. 
+A COLON-DELIMITED manifest must be provided to CompleteTCR detailing the locations of the input alpha 
+and beta FASTQ files as well as a UNIQUE prefix name. CompleteTCR will create a subdirectory using 
+the prefix name in the designated output directory, and output will be placed in this subdirectory. 
+Manifest format is as follows:
+
+Full/Path/To/alpha_fastq:Full/Path/To/beta_fastq:Prefix
+
+Execution of CompleteTCR is accomplished on the command line by providing location of the manifest
+file, the location of the desired output directory, the location of the directory containing the 
+CompleteTCR tool, and the optional parameter for saving all intermediate/temporary files (default
+is set to F). 
+
+$ completeClone.sh <Path/To/manifest> <Path/To/output_dir> <Path/To/CompleteClone> <savetmps_TF>
+
