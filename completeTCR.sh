@@ -95,8 +95,8 @@ do
 			then
 				rm $name.descToID_alpha.txt
 				rm $name.descToID_beta.txt
-				rm $name.ctResult_alpha.txt
-				rm $name.ctResult_beta.txt
+				rm $name.ccResult_alpha.txt
+				rm $name.ccResult_beta.txt
 				rm $name.Rout
 			fi
 
